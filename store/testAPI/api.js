@@ -7,31 +7,31 @@ function api_docs_schema_retrieve(payload) {
   return testAPI.get(`/api-docs/schema/`, { params: { lang: payload.lang } })
 }
 function api_v1_login_create(payload) {
-  return testAPI.post(`/api/v1/login/`, payload.data)
+  return testAPI.post(`/api/v1/login/`, payload)
 }
 function api_v1_signup_create(payload) {
-  return testAPI.post(`/api/v1/signup/`, payload.data)
+  return testAPI.post(`/api/v1/signup/`, payload)
 }
 function api_v1_testing_list(payload) {
   return testAPI.get(`/api/v1/testing/`)
 }
 function api_v1_testing_create(payload) {
-  return testAPI.post(`/api/v1/testing/`, payload.data)
+  return testAPI.post(`/api/v1/testing/`, payload)
 }
 function api_v1_testing_retrieve(payload) {
   return testAPI.get(`/api/v1/testing/${payload.id}/`)
 }
 function api_v1_testing_update(payload) {
-  return testAPI.put(`/api/v1/testing/${payload.id}/`, payload.data)
+  return testAPI.put(`/api/v1/testing/${payload.id}/`, payload)
 }
 function api_v1_testing_partial_update(payload) {
-  return testAPI.patch(`/api/v1/testing/${payload.id}/`, payload.data)
+  return testAPI.patch(`/api/v1/testing/${payload.id}/`, payload)
 }
 function api_v1_testing_destroy(payload) {
   return testAPI.delete(`/api/v1/testing/${payload.id}/`)
 }
 function rest_auth_login_create(payload) {
-  return testAPI.post(`/rest-auth/login/`, payload.data)
+  return testAPI.post(`/rest-auth/login/`, payload)
 }
 function rest_auth_logout_retrieve(payload) {
   return testAPI.get(`/rest-auth/logout/`)
@@ -40,28 +40,28 @@ function rest_auth_logout_create(payload) {
   return testAPI.post(`/rest-auth/logout/`)
 }
 function rest_auth_password_change_create(payload) {
-  return testAPI.post(`/rest-auth/password/change/`, payload.data)
+  return testAPI.post(`/rest-auth/password/change/`, payload)
 }
 function rest_auth_password_reset_create(payload) {
-  return testAPI.post(`/rest-auth/password/reset/`, payload.data)
+  return testAPI.post(`/rest-auth/password/reset/`, payload)
 }
 function rest_auth_password_reset_confirm_create(payload) {
-  return testAPI.post(`/rest-auth/password/reset/confirm/`, payload.data)
+  return testAPI.post(`/rest-auth/password/reset/confirm/`, payload)
 }
 function rest_auth_registration_create(payload) {
-  return testAPI.post(`/rest-auth/registration/`, payload.data)
+  return testAPI.post(`/rest-auth/registration/`, payload)
 }
 function rest_auth_registration_verify_email_create(payload) {
-  return testAPI.post(`/rest-auth/registration/verify-email/`, payload.data)
+  return testAPI.post(`/rest-auth/registration/verify-email/`, payload)
 }
 function rest_auth_user_retrieve(payload) {
   return testAPI.get(`/rest-auth/user/`)
 }
 function rest_auth_user_update(payload) {
-  return testAPI.put(`/rest-auth/user/`, payload.data)
+  return testAPI.put(`/rest-auth/user/`, payload)
 }
 function rest_auth_user_partial_update(payload) {
-  return testAPI.patch(`/rest-auth/user/`, payload.data)
+  return testAPI.patch(`/rest-auth/user/`, payload)
 }
 export const apiService = {
   api_docs_schema_retrieve,
